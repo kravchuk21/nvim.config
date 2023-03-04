@@ -59,6 +59,7 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'ray-x/lsp_signature.nvim'
 
 Plug 'tpope/vim-commentary'
+Plug 'lewis6991/gitsigns.nvim'
 
 call plug#end()
 
@@ -316,6 +317,11 @@ nnoremap L gt
 " Telescope fzf plugin
 lua << EOF
   require('telescope').load_extension('fzf')
+EOF
+
+" Git signs plugin
+lua << EOF
+  require('gitsigns').setup()
 EOF
 
 " Telescope bindings
