@@ -74,8 +74,8 @@ let g:prettier#autoformat_require_pragma = 0
 let g:prettier#quickfix_enabled = 0
 
 " Netrw file explorer settings
-let g:netrw_banner = 0 " hide banner above files
-let g:netrw_liststyle = 3 " tree instead of plain view
+" let g:netrw_banner = 0 " hide banner above files
+" let g:netrw_liststyle = 3 " tree instead of plain view
 let g:netrw_browse_split = 3 " vertical split window when Enter pressed on file
 
 colorscheme gruvbox
@@ -217,7 +217,7 @@ require'lspconfig'.stylelint_lsp.setup{
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
-local servers = { 'pyright', 'html' }
+local servers = { 'pyright', 'html', 'cssls' }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
     on_attach = on_attach,
