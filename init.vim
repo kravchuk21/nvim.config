@@ -67,7 +67,7 @@ call plug#end()
 let mapleader = ","
 
 " Automatically format frontend files with prettier after file save
-let g:prettier#autoformat = 1
+let g:prettier#autoformat = 0
 let g:prettier#autoformat_require_pragma = 0
 
 " Disable quickfix window for prettier
