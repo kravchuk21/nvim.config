@@ -22,7 +22,7 @@ set shiftwidth=2
 
 set clipboard=unnamedplus
 
-inoremap jk <esc>
+inoremap jj <esc>
 
 call plug#begin('~/.vim/plugged')
 
@@ -309,7 +309,7 @@ map gw :Bclose<cr>
 
 " Run Python files by Ctrl+h
 autocmd FileType python map <buffer> <C-h> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
-autocmd FileType python imap <buffer> <C-h> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
+autocmd FileType python imap <buffer> <C-h> <esc>:w<CR>:exec '!python4' shellescape(@%, 1)<CR>
 
 autocmd FileType python set colorcolumn=79
 
