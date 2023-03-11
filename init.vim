@@ -321,7 +321,7 @@ nnoremap L gt
 
 " Telescope fzf plugin
 lua << EOF
-  require('telescope').load_extension('fzf')
+  require('telescope')
 EOF
 
 " Git signs plugin
